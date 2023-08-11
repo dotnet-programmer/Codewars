@@ -35,15 +35,15 @@ public static class Kyu5
 
 	private static bool Scan(Point point, char[][] house, List<Point> scannedPoints)
 	{
-        if (scannedPoints.Contains(point))
-        {
+		if (scannedPoints.Contains(point))
+		{
 			return false;
-        }
+		}
 		scannedPoints.Add(point);
-        if (house[point.X][point.Y] == 'o')
-        {
+		if (house[point.X][point.Y] == 'o')
+		{
 			return true;
-        }
+		}
 		if (house[point.X][point.Y] == '#')
 		{
 			return false;
@@ -52,8 +52,8 @@ public static class Kyu5
 		Point pointDown = new(point.X, point.Y + 1);
 		Point pointLeft = new(point.X - 1, point.Y);
 		Point pointRight = new(point.X + 1, point.Y);
-		return (Scan(pointUp, house, scannedPoints)) 
-			|| (Scan(pointDown, house, scannedPoints)) 
+		return (Scan(pointUp, house, scannedPoints))
+			|| (Scan(pointDown, house, scannedPoints))
 			|| (Scan(pointLeft, house, scannedPoints))
 			|| (Scan(pointRight, house, scannedPoints));
 	}

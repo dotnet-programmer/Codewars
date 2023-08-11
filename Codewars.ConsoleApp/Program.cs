@@ -1,5 +1,5 @@
-﻿using Codewars.Lib;
-using System.Reflection;
+﻿using System.Reflection;
+using Codewars.Lib;
 
 Console.ForegroundColor = ConsoleColor.Green;
 

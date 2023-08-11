@@ -18,6 +18,7 @@ public static class Kyu8
 	public static string ReverseWords(string str) => string.Join(" ", str.Split(' ').Reverse());
 
 	#region solution from YT
+
 	public static string ReverseWords2(string str)
 	{
 		var splitWords = Split(str, ' ');
@@ -70,7 +71,6 @@ public static class Kyu8
 		}
 		return sb.ToString();
 	}
+
 	#endregion solution from YT
-
-
 }

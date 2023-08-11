@@ -1,6 +1,7 @@
 ﻿using Codewars.Lib;
 
 namespace Codewars.Tests;
+
 internal class Kyu5_Tests
 {
 	// I am all alone (poor me)
