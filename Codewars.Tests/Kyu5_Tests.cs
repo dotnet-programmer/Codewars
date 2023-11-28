@@ -17,7 +17,7 @@ internal class Kyu5_Tests
 			"#                                 #".ToCharArray(),
 			"###################################".ToCharArray()
 		};
-		Assert.AreEqual(true, Kyu5.AllAlone(house));
+		Assert.That(Kyu5.AllAlone(house), Is.EqualTo(true));
 	}
 
 	[Test]
@@ -34,6 +34,6 @@ internal class Kyu5_Tests
 			"   #                  X      #".ToCharArray(),
 			"   ###########################".ToCharArray()
 		};
-		Assert.AreEqual(false, Kyu5.AllAlone(house));
+		Assert.That(Kyu5.AllAlone(house), Is.EqualTo(false));
 	}
 }
