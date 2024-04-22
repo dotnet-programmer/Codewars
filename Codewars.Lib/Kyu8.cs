@@ -3,19 +3,24 @@
 public static class Kyu8
 {
 	// Multiply - https://www.codewars.com/kata/50654ddff44f800200000004
+
 	public static int multiply(int a, int b) => a * b;
 
 	// Function 1 - hello world - https://www.codewars.com/kata/523b4ff7adca849afe000035
+
 	public static string greet() => "hello world!";
 
 	// Training JS #7: if..else and ternary operator - https://www.codewars.com/kata/57202aefe8d6c514300001fd
-	public static int SaleHotDogs(int n) => n * (n < 5 ? 100 : n < 10 ? 95 : 90);
+	public static int SaleHotDogs(int n)
+		=> n * (n < 5 ? 100 : n < 10 ? 95 : 90);
 
 	// Convert a Number to a String! - https://www.codewars.com/kata/5265326f5fda8eb1160004c8
-	public static string NumberToString(int num) => num.ToString();
+	public static string NumberToString(int num)
+		=> num.ToString();
 
 	// Reversed Words - https://www.codewars.com/kata/51c8991dee245d7ddf00000e
-	public static string ReverseWords(string str) => string.Join(" ", str.Split(' ').Reverse());
+	public static string ReverseWords(string str)
+		=> string.Join(" ", str.Split(' ').Reverse());
 
 	#region solution from YT
 
@@ -30,7 +35,7 @@ public static class Kyu8
 	private static List<string> Split(string input, char separator)
 	{
 		int currentIndex = 0;
-		List<string> result = new();
+		List<string> result = [];
 		for (int i = 0; i < input.Length; i++)
 		{
 			if (input[i] == separator)
@@ -50,7 +55,7 @@ public static class Kyu8
 
 	private static List<string> Reverse(List<string> list)
 	{
-		List<string> result = new();
+		List<string> result = [];
 		for (int i = list.Count - 1; i >= 0; i--)
 		{
 			result.Add(list[i]);

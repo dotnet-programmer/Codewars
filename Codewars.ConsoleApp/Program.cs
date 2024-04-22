@@ -3,39 +3,47 @@ using Codewars.Lib;
 
 Console.ForegroundColor = ConsoleColor.Green;
 
-Action[] _kyu8 = typeof(Kyu8).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu8 = typeof(Kyu8)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu7 = typeof(Kyu7).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu7 = typeof(Kyu7)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu6 = typeof(Kyu6).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu6 = typeof(Kyu6)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu5 = typeof(Kyu5).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu5 = typeof(Kyu5)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu4 = typeof(Kyu4).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu4 = typeof(Kyu4)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu3 = typeof(Kyu3).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu3 = typeof(Kyu3)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu2 = typeof(Kyu2).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu2 = typeof(Kyu2)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-Action[] _kyu1 = typeof(Kyu1).GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
+Action[] _kyu1 = typeof(Kyu1)
+	.GetMethods(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.Instance)
 	.Select(x => x.CreateDelegate<Action>())
 	.ToArray();
 
-string[] menuItems = new[] { "Easy", "Medium", "Hard", "Very Hard" };
+string[] menuItems = ["Easy", "Medium", "Hard", "Very Hard"];
 
 while (true)
 {
