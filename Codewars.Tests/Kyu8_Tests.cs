@@ -14,7 +14,8 @@ internal class Kyu8_Tests
 
 	// Function 1 - hello world
 	[Test]
-	public void ShouldReturnHelloWorld() => Assert.That(Kyu8.greet(), Is.EqualTo("hello world!"));
+	public void ShouldReturnHelloWorld()
+		=> Assert.That(Kyu8.greet(), Is.EqualTo("hello world!"));
 
 	// Training JS #7: if..else and ternary operator
 	[Test]
@@ -41,7 +42,8 @@ internal class Kyu8_Tests
 	}
 
 	[Test, TestCaseSource(nameof(TestCases))]
-	public string Test(int num) => Kyu8.NumberToString(num);
+	public string Test(int num)
+		=> Kyu8.NumberToString(num);
 
 	// Reversed Words
 	[Test]

@@ -1,14 +1,18 @@
-﻿namespace Codewars.Lib;
+﻿using System.Text;
+
+namespace Codewars.Lib;
 
 public static class Kyu8
 {
 	// Multiply - https://www.codewars.com/kata/50654ddff44f800200000004
 
-	public static int multiply(int a, int b) => a * b;
+	public static int multiply(int a, int b)
+		=> a * b;
 
 	// Function 1 - hello world - https://www.codewars.com/kata/523b4ff7adca849afe000035
 
-	public static string greet() => "hello world!";
+	public static string greet()
+		=> "hello world!";
 
 	// Training JS #7: if..else and ternary operator - https://www.codewars.com/kata/57202aefe8d6c514300001fd
 	public static int SaleHotDogs(int n)
@@ -65,7 +69,7 @@ public static class Kyu8
 
 	private static string Join(List<string> list, char separator)
 	{
-		System.Text.StringBuilder sb = new();
+		StringBuilder sb = new();
 		for (int i = 0; i < list.Count; i++)
 		{
 			sb.Append(list[i]);

@@ -17,20 +17,14 @@ public static class Kyu5
 			}
 		}
 
-		List<Point> scannedPoints = new();
+		List<Point> scannedPoints = [];
 		return !Scan(potus, house, scannedPoints);
 	}
 
-	private struct Point
+	private struct Point(int x, int y)
 	{
-		public Point(int x, int y)
-		{
-			X = x;
-			Y = y;
-		}
-
-		public int X { get; set; }
-		public int Y { get; set; }
+		public int X { get; set; } = x;
+		public int Y { get; set; } = y;
 	}
 
 	private static bool Scan(Point point, char[][] house, List<Point> scannedPoints)
